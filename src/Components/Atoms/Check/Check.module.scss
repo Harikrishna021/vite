@@ -1,0 +1,28 @@
+@import '../../../index.scss';
+
+.filter{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  white-space: nowrap;
+
+  .ant-checkbox.ant-checkbox-checked {
+    &::after {
+      border-color: $theam-blue;
+    }
+
+    > span {
+      background-color: $theam-blue !important;
+      border-color: $theam-blue !important;
+    }
+  }
+
+  input {
+    accent-color: $theam-blue;
+  }
+
+  &:hover {
+    background-color: #2196f30f;
+    background-color: hsla(134, 61%, 41%, 0.1);
+  }
+}
